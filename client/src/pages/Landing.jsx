@@ -13,15 +13,15 @@ const Landing = () => {
     return (
         <div className="min-h-screen">
             {/* Hero */}
-            <section className="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-700 to-primary-500 text-white">
+            <section className="relative overflow-hidden bg-gradient-to-b from-primary-900 via-primary-700 to-primary-400 text-white pb-0">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
                     <div className="absolute bottom-10 right-20 w-96 h-96 bg-accent-500 rounded-full blur-3xl" />
                 </div>
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 pb-28 lg:pb-36">
                     <div className="max-w-3xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm text-sm font-medium mb-8 animate-fade-in">
-                            <HiOutlineHeart className="w-4 h-4" />
+                        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/15 backdrop-blur-sm text-sm font-medium mb-8 animate-fade-in max-w-[260px] sm:max-w-none text-center leading-snug">
+                            <HiOutlineHeart className="w-4 h-4 flex-shrink-0" />
                             Connecting communities, one donation at a time
                         </div>
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-slide-up">
@@ -43,12 +43,6 @@ const Landing = () => {
                             </Link>
                         </div>
                     </div>
-                </div>
-                {/* Wave */}
-                <div className="absolute -bottom-1 left-0 right-0 w-full overflow-hidden leading-none">
-                    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto drop-shadow-sm" preserveAspectRatio="none">
-                        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F9FAFB" />
-                    </svg>
                 </div>
             </section>
 
@@ -182,16 +176,16 @@ const Landing = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="flex items-center gap-2">
-                            <img src="/hopenet-logo.png" alt="HopeNet" className="h-8 w-auto object-contain" />
+                            <img src="/hopenet-logo.png" alt="HopeNet" className="h-8 w-auto object-contain bg-white rounded-md" />
                             <span className="font-bold text-white">HopeNet</span>
                         </div>
-                        <div className="flex gap-6 text-sm">
+                        {/*<div className="flex gap-6 text-sm">
                             <a href="#" className="hover:text-white transition-colors">About</a>
                             <a href="#" className="hover:text-white transition-colors">Privacy</a>
                             <a href="#" className="hover:text-white transition-colors">Terms</a>
                             <a href="#" className="hover:text-white transition-colors">Contact</a>
-                        </div>
-                        <p className="text-sm">© 2026 Thirumal Dhakshnamoorthy. All rights reserved.</p>
+                        </div>*/}
+                        <p className="text-sm text-white text-center">© 2026 Thirumal Dhakshnamoorthy. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
